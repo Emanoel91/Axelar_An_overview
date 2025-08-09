@@ -262,7 +262,7 @@ fig5.update_layout(
     images=[dict(
         source="https://mms.businesswire.com/media/20221219005143/en/1667966/4/black-logo-625x320.jpg",
         xref="paper", yref="paper",
-        x=-0.01, y=-0.01,    # کمی پایین‌تر و چپ‌تر از کادر رسم داده‌ها
+        x=-0.1, y=-0.1,    # کمی پایین‌تر و چپ‌تر از کادر رسم داده‌ها
         sizex=0.2, sizey=0.2,
         xanchor="left",
         yanchor="bottom",
