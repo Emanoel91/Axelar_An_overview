@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Axelar: An overview",
     page_icon="https://img.cryptorank.io/coins/axelar1663924228506.png",
-    layout="wide"
+    layout="wide" 
 )
 
 # --- Title with Logo ---
