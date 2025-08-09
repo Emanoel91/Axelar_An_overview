@@ -15,6 +15,22 @@ st.set_page_config(
 # --- Title  -----------------------------------------------------------------------------------------------------
 st.title("🟡Squid")
 
+# --- Info Box -----------------------------------------------------------------------------------------------------------------------------
+st.markdown(
+    """
+    <div style="background-color: #fff200; padding: 15px; border-radius: 10px; border: 1px solid #fff200;"> 
+        Squid is a pioneering cross-chain swap and liquidity protocol within the blockchain realm, bridging gaps between different chains. It facilitates 
+        seamless token swaps and liquidity transfers across various blockchain networks, utilizing decentralized exchanges (DEXs) for efficient token exchange.
+        This protocol offers multiple user-friendly interfaces, including a Software Development Kit (SDK), a Front End interface, and direct smart contract 
+        interaction, ensuring accessibility and adaptability for users.
+        An outstanding feature of Squid is its integration with Axelar's messaging system, enabling instant transactions across any blockchain. This user-friendly 
+        ecosystem simplifies complex interactions like purchasing NFTs from different marketplaces, engaging in multi-chain DeFi activities, and participating in 
+        cross-chain gaming, without the hassle of multiple transaction processes or wallet downloads.
+</div>
+    """,
+    unsafe_allow_html=True
+)
+
 # --- attention ---------------------------------------------------------------------------------------------------------
 st.info("📊Charts initially display data for a default time range. Select a custom range to view results for your desired period.")
 st.info("⏳On-chain data retrieval may take a few moments. Please wait while the results load.")
