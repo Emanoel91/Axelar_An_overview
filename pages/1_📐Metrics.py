@@ -152,7 +152,7 @@ def load_txn_metrics(timeframe, start_date, end_date):
         SELECT 
             DATE_TRUNC('{timeframe}', block_timestamp_hour) AS "Date", 
             SUM(transaction_count) AS "Number of Txns",
-            SUM(transaction_count) OVER (ORDER BY DATE_TRUNC('{timeframe}', block_timestamp_hour)) AS "Total Number of Txns",
+            SUM("Number of Txns") OVER (ORDER BY DATE_TRUNC('{timeframe}', block_timestamp_hour)) AS "Total Number of Txns",
             SUM(transaction_count_success) AS "Number of Successful Transactions",
             SUM(transaction_count_failed) AS "Number of Failed Transactions",
             SUM(total_fees_native) AS "Txn Fees (AXL)",
