@@ -865,9 +865,12 @@ order by 4 desc
     df = pd.read_sql(query, conn)
     return df
 
+
 df_transfer_metrics = load_transfer_metrics(start_date, end_date)
 
-# ---- چارت اول: Normalized Number of Transfers ----
+col1, col2 = st.columns(2)
+
+# Stacked Horizontal Bar: Normalized Number of Transfers
 df_norm1 = df_transfer_metrics.copy()
 df_norm1["Number of Transfers %"] = df_norm1.groupby("Source Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
 fig1 = px.bar(
@@ -879,10 +882,9 @@ fig1 = px.bar(
     barmode="stack",
     title="Normalized Number of Transfers by Symbol per Source Chain"
 )
-fig1.update_layout(height=600)  # افزایش ارتفاع
-st.plotly_chart(fig1, use_container_width=True)
+col1.plotly_chart(fig1, use_container_width=True)
 
-# ---- چارت دوم: Normalized Volume of Transfers (USD) ----
+# Stacked Horizontal Bar: Normalized Volume of Transfers (USD)
 df_norm2 = df_transfer_metrics.copy()
 df_norm2["Volume %"] = df_norm2.groupby("Source Chain")["Volume of Transfers (USD)"].transform(lambda x: x / x.sum() * 100)
 fig2 = px.bar(
@@ -894,7 +896,4 @@ fig2 = px.bar(
     barmode="stack",
     title="Normalized Volume of Transfers (USD) by Symbol per Source Chain"
 )
-fig2.update_layout(height=600)  # افزایش ارتفاع
-st.plotly_chart(fig2, use_container_width=True)
-
-
+col2.plotly_chart(fig2, use_container_width=True)
