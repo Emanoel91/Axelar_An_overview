@@ -1112,7 +1112,7 @@ col1.plotly_chart(fig1, use_container_width=True)
 
 # Stacked Horizontal Bar: Normalized Volume of Transfers (USD)
 df_norm2 = df_transfer_metrics_by_dest.copy()
-df_norm2["Volume %"] = df_norm2.groupby("Destination Chain")["Volume of Transfers (USD)"].transform(lambda x: x / x.sum() * 100)
+df_norm2["%Volume"] = df_norm2.groupby(" ")["Volume of Transfers (USD)"].transform(lambda x: x / x.sum() * 100)
 fig2 = px.bar(
     df_norm2,
     x="Volume %",
@@ -1120,6 +1120,6 @@ fig2 = px.bar(
     color="Symbol",
     orientation="h",
     barmode="stack",
-    title="Normalized Volume of Transfers (USD) by Symbol per Destination Chain"
+    title="Volume of Transfers (USD) by Symbol per Destination Chain (%Normalized)"
 )
 col2.plotly_chart(fig2, use_container_width=True)
