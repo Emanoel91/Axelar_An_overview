@@ -257,16 +257,16 @@ col5, col6, col7 = st.columns(3)
 
 # Scatter: Median Gas Fee
 fig5 = px.scatter(df_txn_metrics, x="Date", y="Median Fee (AXL)", size="Median Fee (AXL)", title="Median Gas Fee Over Time", color_discrete_sequence=["#99dfff"])
-fig5.update_layout(xaxis_title=" ",yaxis_title="$AXL")
+fig5.update_layout(xaxis_title=" ", yaxis_title="$AXL")
 col5.plotly_chart(fig5, use_container_width=True)
 
 # Scatter: Average Gas Fee
 fig6 = px.scatter(df_txn_metrics, x="Date", y="Avg Fee (AXL)", size="Avg Fee (AXL)", title="Average Gas Fee Over Time", color_discrete_sequence=["#79ff9f"])
-fig5.update_layout(xaxis_title=" ",yaxis_title="$AXL")
+fig6.update_layout(xaxis_title=" ", yaxis_title="$AXL") 
 col6.plotly_chart(fig6, use_container_width=True)
 
 # Scatter: Max Gas Fee
 fig7 = px.scatter(df_txn_metrics, x="Date", y="Max Fee (AXL)", size="Max Fee (AXL)", title="Max Gas Fee Over Time", color_discrete_sequence=["#f77f84"])
-fig5.update_layout(xaxis_title=" ",yaxis_title="$AXL")
+fig7.update_layout(xaxis_title=" ",yaxis_title="$AXL")
 col7.plotly_chart(fig7, use_container_width=True)
 
