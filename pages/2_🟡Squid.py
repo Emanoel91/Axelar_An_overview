@@ -1120,6 +1120,6 @@ fig2 = px.bar(
     color="Symbol",
     orientation="h",
     barmode="stack",
-    title="Volume of Transfers (USD) by Symbol per Destination Chain (%Normalized)"
+    title="Normalized Volume of Transfers ($) by Symbol per Destination Chain"
 )
 col2.plotly_chart(fig2, use_container_width=True)
