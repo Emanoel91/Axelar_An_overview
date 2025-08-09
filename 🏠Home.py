@@ -31,26 +31,24 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-# --- Info Box1 ---
+# --- Info Box ---
 st.markdown(
     """
-    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
-    <div style="background-color: #eff2f6; padding: 15px; border-radius: 10px; border: 1px solid #eff2f6;">
-      Axelar emerges as the cutting-edge platform revolutionizing Web3 interoperability, poised to propel the next wave of internet applications to unparalleled heights, 
-      accommodating billions of users worldwide. With its innovative architecture and robust infrastructure, Axelar paves the way for seamless connectivity across diverse 
-      blockchain networks, facilitating frictionless data and asset transfer while ensuring utmost security and efficiency.
-      At its core, Axelar serves as the bridge between disparate blockchain ecosystems, enabling developers to harness the full potential of decentralized applications (dApps) 
-      without constraints. By offering a programmable framework, Axelar empowers developers to effortlessly integrate their applications with multiple blockchains, unlocking 
-      unprecedented scalability and accessibility on a global scale.
-      In a landscape where interoperability is paramount, Axelar stands as the beacon of innovation, driving forward the vision of a truly interconnected Web3 ecosystem. 
-      Join us as we embark on this transformative journey, shaping the future of internet applications and revolutionizing the way we interact with decentralized technologies.  
-    </div>
+    <div style="background-color: #fdc59e; padding: 15px; border-radius: 10px; border: 1px solid #fdc59e;">
+        Axelar emerges as the cutting-edge platform revolutionizing Web3 interoperability, poised to propel the next wave of internet applications to unparalleled heights, 
+        accommodating billions of users worldwide. With its innovative architecture and robust infrastructure, Axelar paves the way for seamless connectivity across diverse 
+        blockchain networks, facilitating frictionless data and asset transfer while ensuring utmost security and efficiency.
+        At its core, Axelar serves as the bridge between disparate blockchain ecosystems, enabling developers to harness the full potential of decentralized applications (dApps) 
+        without constraints. By offering a programmable framework, Axelar empowers developers to effortlessly integrate their applications with multiple blockchains, unlocking 
+        unprecedented scalability and accessibility on a global scale.
+        In a landscape where interoperability is paramount, Axelar stands as the beacon of innovation, driving forward the vision of a truly interconnected Web3 ecosystem. 
+        Join us as we embark on this transformative journey, shaping the future of internet applications and revolutionizing the way we interact with decentralized technologies.
+</div>
     """,
     unsafe_allow_html=True
 )
 
-# --- Reference Info ---
+# --- Reference Info ------------------------------------------------------------------------------------------------------------------------
 st.markdown(
     """
     <div style="margin-top: 20px; margin-bottom: 20px; font-size: 16px;">
