@@ -867,7 +867,8 @@ order by 4 desc
 
 df_transfer_metrics = load_transfer_metrics(start_date, end_date)
 
- col1, col2 = st.columns(2)
+# ---- ردیف اول چارت‌ها ----
+col1, col2 = st.columns(2)
 
 # Stacked Horizontal Bar: Normalized Number of Transfers
 df_norm1 = df_transfer_metrics.copy()
