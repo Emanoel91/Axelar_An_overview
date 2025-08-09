@@ -479,9 +479,9 @@ df_display = df_display.applymap(lambda x: f"{x:,}" if isinstance(x, (int, float
 st.dataframe(df_display, use_container_width=True)
 
 # --- Top 10 Horizontal Bar Charts ----------------------------------------------------------------------------------
-top_vol = df_source.nlargest(10, "Volume of Transfers (USD)")
-top_txn = df_source.nlargest(10, "Number of Transfers")
-top_usr = df_source.nlargest(10, "Number of Users")
+top_vol = df_source.nlargest(20, "Volume of Transfers (USD)")
+top_txn = df_source.nlargest(20, "Number of Transfers")
+top_usr = df_source.nlargest(20, "Number of Users")
 
 col1, col2, col3 = st.columns(3)
 
@@ -490,7 +490,7 @@ with col1:
         top_vol.sort_values("Volume of Transfers (USD)"),
         x="Volume of Transfers (USD)", y="Source Chain",
         orientation="h",
-        title="Top 10 Source Chains by Volume (USD)",
+        title="Top 20 Source Chains by Volume (USD)",
         labels={"Volume of Transfers (USD)": "USD", "Source Chain": " "},
         color_discrete_sequence=["#ca99e5"]
     )
@@ -501,7 +501,7 @@ with col2:
         top_txn.sort_values("Number of Transfers"),
         x="Number of Transfers", y="Source Chain",
         orientation="h",
-        title="Top 10 Source Chains by Transfers",
+        title="Top 20 Source Chains by Transfers",
         labels={"Number of Transfers": "Txns count", "Source Chain": " "},
         color_discrete_sequence=["#ca99e5"]
     )
@@ -512,7 +512,7 @@ with col3:
         top_usr.sort_values("Number of Users"),
         x="Number of Users", y="Source Chain",
         orientation="h",
-        title="Top 10 Source Chains by Users",
+        title="Top 20 Source Chains by Users",
         labels={"Number of Users": "Address count", "Source Chain": " "},
         color_discrete_sequence=["#ca99e5"]
     )
