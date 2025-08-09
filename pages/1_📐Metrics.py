@@ -208,20 +208,20 @@ fig1.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Txns"], name=
 fig1.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Total Number of Txns"], name="Total Number of Txns", mode="lines", yaxis="y2", line_color="#000000"))
 fig1.update_layout(
     title="Number of Transactions Over Time",
-    yaxis=dict(title="Number of Txns"),
-    yaxis2=dict(title="Total Number of Txns", overlaying="y", side="right"),
+    yaxis=dict(title="Txns count"),
+    yaxis2=dict(title="Txns count", overlaying="y", side="right"),
     barmode="group"
 )
 col1.plotly_chart(fig1, use_container_width=True)
 
 # Stacked Bar: Successful vs Failed
 fig2 = go.Figure()
-fig2.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Successful Transactions"], name="Successful Transactions")
-fig2.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Failed Transactions"], name="Failed Transactions")
+fig2.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Successful Transactions"], name="Successful Transactions", marker_color="#8dffad")
+fig2.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Failed Transactions"], name="Failed Transactions", marker_color="#fe979b")
 fig2.update_layout(
     title="Successful vs Failed Transactions Over Time",
     barmode="stack",
-    yaxis=dict(title="Transactions")
+    yaxis=dict(title="Txns count")
 )
 col2.plotly_chart(fig2, use_container_width=True)
 
