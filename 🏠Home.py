@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide" 
 )
 
-# --- Title with Logo ---
+# --- Title with Logo ------------------------------------------------------------------------------------------------------------------
 st.markdown(
     """
     <div style="display: flex; align-items: center; gap: 15px;">
@@ -18,7 +18,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# --- Reference and Rebuild Info ---
+# --- Reference and Rebuild Info -------------------------------------------------------------------------------------------------------------
 st.markdown(
     """
     <div style="margin-top: 20px; margin-bottom: 20px; font-size: 16px;">
@@ -31,10 +31,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# --- Info Box ---
+# --- Info Box -----------------------------------------------------------------------------------------------------------------------------
 st.markdown(
     """
-    <div style="background-color: #fdc59e; padding: 15px; border-radius: 10px; border: 1px solid #fdc59e;">
+    <div style="background-color: #cff1e4; padding: 15px; border-radius: 10px; border: 1px solid #cff1e4;">
         Axelar emerges as the cutting-edge platform revolutionizing Web3 interoperability, poised to propel the next wave of internet applications to unparalleled heights, 
         accommodating billions of users worldwide. With its innovative architecture and robust infrastructure, Axelar paves the way for seamless connectivity across diverse 
         blockchain networks, facilitating frictionless data and asset transfer while ensuring utmost security and efficiency.
