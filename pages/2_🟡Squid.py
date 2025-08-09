@@ -888,7 +888,7 @@ col1, col2 = st.columns(2)
 
 # Stacked Horizontal Bar: Normalized Number of Transfers
 df_norm1 = df_transfer_metrics.copy()
-df_norm1["Number of Transfers %"] = df_norm1.groupby("Source Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
+df_norm1["Number of Swaps %"] = df_norm1.groupby("Source Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
 fig1 = px.bar(
     df_norm1,
     x="Number of Transfers %",
@@ -1098,7 +1098,7 @@ col1, col2 = st.columns(2)
 
 # Stacked Horizontal Bar: Normalized Number of Transfers
 df_norm1 = df_transfer_metrics_by_dest.copy()
-df_norm1["Number of Transfers %"] = df_norm1.groupby("Destination Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
+df_norm1["Number of Swaps %"] = df_norm1.groupby("Destination Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
 fig1 = px.bar(
     df_norm1,
     x="Number of Transfers %",
