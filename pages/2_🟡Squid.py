@@ -18,7 +18,7 @@ st.title("🟡Squid")
 # --- Info Box -----------------------------------------------------------------------------------------------------------------------------
 st.markdown(
     """
-    <div style="background-color: #fff200; padding: 15px; border-radius: 10px; border: 1px solid #fff200;"> 
+    <div style="background-color: #fff200; padding: 15px; border-radius: 10px; border: 1px solid #000000;"> 
         Squid is a pioneering cross-chain swap and liquidity protocol within the blockchain realm, bridging gaps between different chains. It facilitates 
         seamless token swaps and liquidity transfers across various blockchain networks, utilizing decentralized exchanges (DEXs) for efficient token exchange.
         This protocol offers multiple user-friendly interfaces, including a Software Development Kit (SDK), a Front End interface, and direct smart contract 
