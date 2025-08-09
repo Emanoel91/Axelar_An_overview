@@ -42,7 +42,7 @@ st.markdown(
         without constraints. By offering a programmable framework, Axelar empowers developers to effortlessly integrate their applications with multiple blockchains, unlocking 
         unprecedented scalability and accessibility on a global scale.
         In a landscape where interoperability is paramount, Axelar stands as the beacon of innovation, driving forward the vision of a truly interconnected Web3 ecosystem. 
-        Join us as we embark on this transformative journey, shaping the future of internet applications and revolutionizing the way we interact with decentralized technologies.
+        
 </div>
     """,
     unsafe_allow_html=True
