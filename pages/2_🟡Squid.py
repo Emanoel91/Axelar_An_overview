@@ -208,17 +208,17 @@ df_kpi = load_kpi_data(timeframe, start_date, end_date)
 col1, col2, col3 = st.columns(3)
 
 col1.metric(
-    label="Volume of Transfers",
+    label="Volume of Swaps",
     value=f"${df_kpi['VOLUME_OF_TRANSFERS'][0]:,}"
 )
 
 col2.metric(
-    label="Number of Transfers",
+    label="Number of Swaps",
     value=f"{df_kpi['NUMBER_OF_TRANSFERS'][0]:,} Txns"
 )
 
 col3.metric(
-    label="Number of Users",
+    label="Number of Swappers",
     value=f"{df_kpi['NUMBER_OF_USERS'][0]:,} Addresses"
 )
 
