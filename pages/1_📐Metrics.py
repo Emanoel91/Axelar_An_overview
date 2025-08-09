@@ -258,20 +258,6 @@ col5, col6, col7 = st.columns(3)
 # Scatter: Median Gas Fee
 fig5 = px.scatter(df_txn_metrics, x="Date", y="Median Fee (AXL)", size="Median Fee (AXL)", title="Median Gas Fee Over Time", color_discrete_sequence=["#99dfff"])
 fig5.update_layout(xaxis_title=" ", yaxis_title="$AXL")
-fig5.update_layout(
-    images=[dict(
-        source="https://mms.businesswire.com/media/20221219005143/en/1667966/4/black-logo-625x320.jpg",
-        xref="paper", yref="paper",
-        x=-0.2, y=-0.2,    # کمی پایین‌تر و چپ‌تر از کادر رسم داده‌ها
-        sizex=0.2, sizey=0.2,
-        xanchor="left",
-        yanchor="bottom",
-        opacity=0.2,
-        layer="below"
-    )]
-)
-
-
 col5.plotly_chart(fig5, use_container_width=True)
 
 # Scatter: Average Gas Fee
