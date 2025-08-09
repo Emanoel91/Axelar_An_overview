@@ -509,7 +509,7 @@ with col2:
         top_txn.sort_values("Number of Transfers"),
         x="Number of Transfers", y="Source Chain",
         orientation="h",
-        title="Top 20 Source Chains by Transfers",
+        title="Top 20 Source Chains by Transactions",
         labels={"Number of Transfers": "Txns count", "Source Chain": " "},
         color_discrete_sequence=["#b701ba"]
     )
@@ -520,7 +520,7 @@ with col3:
         top_usr.sort_values("Number of Users"),
         x="Number of Users", y="Source Chain",
         orientation="h",
-        title="Top 20 Source Chains by Users",
+        title="Top 20 Source Chains by Swappers",
         labels={"Number of Users": "Address count", "Source Chain": " "},
         color_discrete_sequence=["#b701ba"]
     )
@@ -673,7 +673,7 @@ fig_txn_dest = px.bar(
     x="Number of Transfers",
     y="Destination Chain",
     orientation="h",
-    title="Top 20 Destination Chains by Transfers",
+    title="Top 20 Destination Chains by Transactions",
     labels={"Number of Transfers": "Txns count", "Destination Chain": " "},
     color_discrete_sequence=["#b701ba"]
 )
@@ -686,7 +686,7 @@ fig_usr_dest = px.bar(
     x="Number of Users",
     y="Destination Chain",
     orientation="h",
-    title="Top 20 Destination Chains by Users",
+    title="Top 20 Destination Chains by Swappers",
     labels={"Number of Users": "Addresses count", "Destination Chain": " "},
     color_discrete_sequence=["#b701ba"]
 )
