@@ -258,6 +258,19 @@ col5, col6, col7 = st.columns(3)
 # Scatter: Median Gas Fee
 fig5 = px.scatter(df_txn_metrics, x="Date", y="Median Fee (AXL)", size="Median Fee (AXL)", title="Median Gas Fee Over Time", color_discrete_sequence=["#99dfff"])
 fig5.update_layout(xaxis_title=" ", yaxis_title="$AXL")
+fig5.update_layout(
+    images=[dict(
+        source="https://img.cryptorank.io/coins/axelar1663924228506.png",
+        xref="paper", yref="paper",
+        x=1, y=0,  # موقعیت لوگو؛ x=1 یعنی انتهای محور x، y=0 یعنی پایین محور y
+        sizex=0.2, sizey=0.2,  # اندازه لوگو (نسبت به کل نمودار)
+        xanchor="right",
+        yanchor="bottom",
+        opacity=0.2,  # شفافیت لوگو (برای واترمارک بهتر 0.1 تا 0.3 معمولا خوبه)
+        layer="below"  # لایه پشت نمودار باشه
+    )]
+)
+
 col5.plotly_chart(fig5, use_container_width=True)
 
 # Scatter: Average Gas Fee
