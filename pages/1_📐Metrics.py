@@ -262,10 +262,10 @@ fig5.update_layout(
     images=[dict(
         source="https://mms.businesswire.com/media/20221219005143/en/1667966/4/black-logo-625x320.jpg",
         xref="paper", yref="paper",
-        x=0.5, y=0.5,
-        sizex=0.3, sizey=0.3,
-        xanchor="center",
-        yanchor="middle",
+        x=0, y=0,
+        sizex=0.2, sizey=0.2,
+        xanchor="left",
+        yanchor="bottom",
         opacity=0.2,
         layer="below"
     )]
