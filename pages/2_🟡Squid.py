@@ -867,7 +867,7 @@ order by 4 desc
 
 df_transfer_metrics = load_transfer_metrics(start_date, end_date)
 
-col1, col2 = st.columns(2)
+# -- col1, col2 = st.columns(2)
 
 # Stacked Horizontal Bar: Normalized Number of Transfers
 df_norm1 = df_transfer_metrics.copy()
@@ -881,7 +881,7 @@ fig1 = px.bar(
     barmode="stack",
     title="Normalized Number of Transfers by Symbol per Source Chain"
 )
-col1.plotly_chart(fig1, use_container_width=True)
+# -- col1.plotly_chart(fig1, use_container_width=True)
 
 # Stacked Horizontal Bar: Normalized Volume of Transfers (USD)
 df_norm2 = df_transfer_metrics.copy()
@@ -895,5 +895,5 @@ fig2 = px.bar(
     barmode="stack",
     title="Normalized Volume of Transfers (USD) by Symbol per Source Chain"
 )
-col2.plotly_chart(fig2, use_container_width=True)
+# -- col2.plotly_chart(fig2, use_container_width=True)
 
