@@ -204,8 +204,8 @@ col1, col2 = st.columns(2)
 
 # Bar + Line: Number of Txns & Total Number of Txns
 fig1 = go.Figure()
-fig1.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Txns"], name="Number of Txns", yaxis="y1")
-fig1.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Total Number of Txns"], name="Total Number of Txns", mode="lines", yaxis="y2"))
+fig1.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Txns"], name="Number of Txns", yaxis="y1", marker_color="#3f48cc")
+fig1.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Total Number of Txns"], name="Total Number of Txns", mode="lines", yaxis="y2", line_color="#000000"))
 fig1.update_layout(
     title="Number of Transactions Over Time",
     yaxis=dict(title="Number of Txns"),
