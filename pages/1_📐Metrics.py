@@ -260,7 +260,7 @@ fig5 = px.scatter(df_txn_metrics, x="Date", y="Median Fee (AXL)", size="Median F
 fig5.update_layout(xaxis_title=" ", yaxis_title="$AXL")
 fig5.update_layout(
     images=[dict(
-        source="https://drive.google.com/uc?export=view&id=1nVZ-AKLKt3N0A1oQgBN-zU3bnrmWQSVE",
+        source="https://mms.businesswire.com/media/20221219005143/en/1667966/4/black-logo-625x320.jpg",
         xref="paper", yref="paper",
         x=0.5, y=0.5,
         sizex=0.3, sizey=0.3,
