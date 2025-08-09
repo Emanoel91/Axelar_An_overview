@@ -230,24 +230,24 @@ col3, col4 = st.columns(2)
 
 # Bar + Line: Txn Fees (AXL) & Txn Fees (USD)
 fig3 = go.Figure()
-fig3.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Txn Fees (AXL)"], name="Txn Fees (AXL)", yaxis="y1")
-fig3.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Txn Fees (USD)"], name="Txn Fees (USD)", mode="lines", yaxis="y2"))
+fig3.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Txn Fees (AXL)"], name="Txn Fees (AXL)", yaxis="y1", marker_color="#ff9750")
+fig3.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Txn Fees (USD)"], name="Txn Fees (USD)", mode="lines", yaxis="y2", marker_color="#89c79a"))
 fig3.update_layout(
     title="Transaction Fees Over Time",
-    yaxis=dict(title="Fees (AXL)"),
-    yaxis2=dict(title="Fees (USD)", overlaying="y", side="right"),
+    yaxis=dict(title="$AXL"),
+    yaxis2=dict(title="$USD", overlaying="y", side="right"),
     barmode="group"
 )
 col3.plotly_chart(fig3, use_container_width=True)
 
 # Bar + Line: Number of Users & Avg Txn per User
 fig4 = go.Figure()
-fig4.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Users"], name="Number of Users", yaxis="y1")
-fig4.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Avg Txn per User"], name="Avg Txn per User", mode="lines", yaxis="y2"))
+fig4.add_bar(x=df_txn_metrics["Date"], y=df_txn_metrics["Number of Users"], name="Number of Users", yaxis="y1", marker_color="#3f48cc")
+fig4.add_trace(go.Scatter(x=df_txn_metrics["Date"], y=df_txn_metrics["Avg Txn per User"], name="Avg Txn per User", mode="lines", yaxis="y2", marker_color="#000000"))
 fig4.update_layout(
     title="Number of Users Over Time",
-    yaxis=dict(title="Number of Users"),
-    yaxis2=dict(title="Avg Txn per User", overlaying="y", side="right"),
+    yaxis=dict(title="Address count"),
+    yaxis2=dict(title="Txn count", overlaying="y", side="right"),
     barmode="group"
 )
 col4.plotly_chart(fig4, use_container_width=True)
