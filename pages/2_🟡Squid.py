@@ -896,7 +896,7 @@ fig1 = px.bar(
     color="Symbol",
     orientation="h",
     barmode="stack",
-    title="Normalized Number of Transfers by Symbol per Source Chain"
+    title="Normalized Number of Swaps by Symbol per Source Chain"
 )
 col1.plotly_chart(fig1, use_container_width=True)
 
@@ -910,7 +910,7 @@ fig2 = px.bar(
     color="Symbol",
     orientation="h",
     barmode="stack",
-    title="Normalized Volume of Transfers (USD) by Symbol per Source Chain"
+    title="Normalized Volume of Swaps (USD) by Symbol per Source Chain"
 )
 col2.plotly_chart(fig2, use_container_width=True)
 # --- Row 6 --------------------------------------------------------------------------------------
@@ -1106,7 +1106,7 @@ fig1 = px.bar(
     color="Symbol",
     orientation="h",
     barmode="stack",
-    title="Normalized Number of Transfers by Symbol per Destination Chain"
+    title="Normalized Number of Swaps by Symbol per Destination Chain"
 )
 col1.plotly_chart(fig1, use_container_width=True)
 
@@ -1120,6 +1120,6 @@ fig2 = px.bar(
     color="Symbol",
     orientation="h",
     barmode="stack",
-    title="Normalized Volume of Transfers ($) by Symbol per Destination Chain"
+    title="Normalized Volume of Swaps ($) by Symbol per Destination Chain"
 )
 col2.plotly_chart(fig2, use_container_width=True)
