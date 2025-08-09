@@ -858,8 +858,8 @@ SELECT source_chain as "Source Chain", CASE
      count(distinct id) as "Number of Transfers"
 
 FROM axelar_service
-group by 1, 2
 where created_at::date>='{start_str}' and created_at::date<='{end_str}'
+group by 1, 2
 order by 4 desc 
     """
     df = pd.read_sql(query, conn)
