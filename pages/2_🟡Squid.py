@@ -881,7 +881,7 @@ fig1 = px.bar(
     barmode="stack",
     title="Normalized Number of Transfers by Symbol per Source Chain"
 )
- col1.plotly_chart(fig1, use_container_width=True)
+col1.plotly_chart(fig1, use_container_width=True)
 
 # Stacked Horizontal Bar: Normalized Volume of Transfers (USD)
 df_norm2 = df_transfer_metrics.copy()
@@ -895,5 +895,5 @@ fig2 = px.bar(
     barmode="stack",
     title="Normalized Volume of Transfers (USD) by Symbol per Source Chain"
 )
- col2.plotly_chart(fig2, use_container_width=True)
+col2.plotly_chart(fig2, use_container_width=True)
 
