@@ -262,14 +262,15 @@ fig5.update_layout(
     images=[dict(
         source="https://img.cryptorank.io/coins/axelar1663924228506.png",
         xref="paper", yref="paper",
-        x=1, y=0,  # موقعیت لوگو؛ x=1 یعنی انتهای محور x، y=0 یعنی پایین محور y
-        sizex=0.2, sizey=0.2,  # اندازه لوگو (نسبت به کل نمودار)
-        xanchor="right",
-        yanchor="bottom",
-        opacity=0.2,  # شفافیت لوگو (برای واترمارک بهتر 0.1 تا 0.3 معمولا خوبه)
-        layer="below"  # لایه پشت نمودار باشه
+        x=0.5, y=0.5,
+        sizex=0.3, sizey=0.3,
+        xanchor="center",
+        yanchor="middle",
+        opacity=0.2,
+        layer="below"
     )]
 )
+
 
 col5.plotly_chart(fig5, use_container_width=True)
 
