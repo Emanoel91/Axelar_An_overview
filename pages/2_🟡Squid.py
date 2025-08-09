@@ -891,7 +891,7 @@ df_norm1 = df_transfer_metrics.copy()
 df_norm1["Number of Swaps %"] = df_norm1.groupby("Source Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
 fig1 = px.bar(
     df_norm1,
-    x="Number of Transfers %",
+    x="Number of Swaps %",
     y="Source Chain",
     color="Symbol",
     orientation="h",
@@ -1101,7 +1101,7 @@ df_norm1 = df_transfer_metrics_by_dest.copy()
 df_norm1["Number of Swaps %"] = df_norm1.groupby("Destination Chain")["Number of Transfers"].transform(lambda x: x / x.sum() * 100)
 fig1 = px.bar(
     df_norm1,
-    x="Number of Transfers %",
+    x="Number of Swaps %",
     y="Destination Chain",
     color="Symbol",
     orientation="h",
